@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "69abe335-1cad-4934-9c1f-a7901226491e",
+		"name": "TZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23817306"
+	},
+	"item": [
+		{
+			"name": "Post dishes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Dish\",\r\n    \"price\":123,\r\n    \"drink\":{\r\n        \"name\":\"drink\",\r\n        \"price\":123,\r\n        \"hasLemon\":true,\r\n        \"hasIce\": false\r\n    },\r\n    \"cuisine\":\"POLISH\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/dishes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"dishes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Dishes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/dishes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"dishes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/dishes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"dishes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get current cuisine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/dishes?cuisine=POLISH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"dishes"
+					],
+					"query": [
+						{
+							"key": "cuisine",
+							"value": "POLISH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Drinks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drinks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drinks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post drink",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"drink\",\r\n    \"price\":123,\r\n    \"hasLemon\": false,\r\n    \"hasIce\": false   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drinks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drinks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by id drink",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drinks/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drinks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/customer/myself",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"myself"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Desserts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/desserts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"desserts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get dessert by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/desserts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"desserts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post dessert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"name\",\r\n    \"price\":123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/desserts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"desserts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lunch\":{\r\n        \"dish\":{\r\n            \"name\":\"name\",\r\n            \"price\":123,\r\n            \"drink\":{\r\n                \"name\":\"drink\",\r\n                \"price\":123,\r\n                \"hasLemon\": false,\r\n                \"hasIce\": true   \r\n            },\r\n            \"cuisine\":\"POLISH\"\r\n        },\r\n        \"dessert\":{\r\n            \"name\":\"dessert\",\r\n            \"price\":123\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get myself",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/customer/myself?userId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"myself"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
